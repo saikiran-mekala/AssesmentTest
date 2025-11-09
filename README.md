@@ -1,6 +1,4 @@
 
-
-docker-compose exec app sh -c "cat > README.md" << 'EOF'
 # Appointment Reminder Workflow Engine
 
 A CLI-first, Dockerized service for managing appointment reminders with SMS notifications and reply processing.
@@ -61,3 +59,4 @@ docker-compose exec app python -m app.cli.main report reminders \
 
 # View appointment history
 docker-compose exec app python -m app.cli.main history --appointment "APPOINTMENT_ID"
+
