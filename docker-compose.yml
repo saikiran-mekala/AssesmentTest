@@ -1,0 +1,25 @@
+services:
+  app:
+    platform: linux/amd64
+    build: .
+    command: python -m app.main
+    environment:
+      MONGO_URL: mongodb://mongo:27017
+      DB_NAME: reminder_dev
+    volumes:
+      - .:/app
+    depends_on:
+      - mongo
+
+  mongo:
+    platform: linux/amd64
+    image: mongo:7.0
+    environment:
+      MONGO_INITDB_DATABASE: reminder_dev
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data: {}

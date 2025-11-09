@@ -1,0 +1,4 @@
+from,to,message,received_at,event_id
++15551234567,+15550001111,Yes I will be there,2025-01-20T10:30:00Z,event_001
++15551234567,+15550001111,No I cannot make it,2025-01-21T14:15:00Z,event_002
++15551234567,+15550001111,Need to reschedule,2025-01-22T09:45:00Z,event_003

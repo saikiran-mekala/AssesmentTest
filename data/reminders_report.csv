@@ -1,0 +1,2 @@
+reminder_id,appointment_id,patient_name,phone,offset_days,scheduled_for,status,attempts,last_error,dispatched_at,delivered_at
+df9e6178-2599-4107-bc12-fb7654b92807,89c273a6-6e2c-49eb-b4e5-6eb02467d728,John Doe,+15551234567,1,2025-11-08T11:43:21.381000,delivered,1,,2025-11-08 12:43:25.682000,2025-11-08 12:43:25.706000
